@@ -1,0 +1,129 @@
+.nav{
+    background-color:$cor-primary ;
+    padding:$distance-2 $distance-6;
+    &__list__item a{padding: $basic-Distance;
+        color: $cor-basic-W; }
+        & a:hover{transform: scale(1.05);}
+}
+
+.banner{background: url(../images/banner/banner.png) no-repeat center;
+    background-size: cover;
+    height: 52.5rem;
+    
+    &__title{text-align: right;
+    color:$cor-secondary;
+    font-size: $fz-6;
+    font-weight: bold;
+    padding-top: $basic-Distance*49.5;
+    padding-right: $distance-5-1;
+    span{font-size:$fz-4;
+    font-weight: normal;}
+    }
+}
+
+.about{background-color:$cor-third;
+    padding: $distance-5 0 $distance-7 0;
+    text-align: center;
+    &__title{color: $cor-secondary;}
+
+    &__list{align-items: center;
+    &__item{padding-right: $distance-2;}
+    // &__item:nth-of-type(4){padding-right: 0;}
+    &__item img{margin: 0 auto $distance-1 auto;}
+    &__item:nth-of-type(4) img{width: 100px; height: 100px;}
+    &__item a{color:$cor-secondary;}
+    &__item a:hover img{transform: scale(1.1);}
+    &__item p{text-align: justify;}
+    }
+}
+.classic{h3{color: $cor-secondary;
+    text-align: center;}
+    h4{color: $cor-primary;}
+    &__list{margin-bottom:$distance-3;}
+    &__list__photo{margin-right:$distance-3;}
+    &__list__photo__02{margin-left:$distance-3;}
+}
+.design{background: url(../images/bg.png)no-repeat center;
+    background-size: cover;
+    max-height: 705px;
+    text-align: center;
+    
+    &__content{padding: $distance-5;}
+    &__title{color: $cor-basic-W;}
+    &__list__item{padding:$distance-1; position: relative;}
+    &__list__item h4{font-size: $fz-7; font-weight: bold; color: $cor-primary;}
+    &__list__item__01{position: absolute;
+    top:50%; left:50%; transform: translate(-50%, -50%);}
+    &__list__item__02{position: absolute;
+    top:50%; left:50%; transform: translate(-50%, -50%);}
+    &__list__item img{max-width:100%}
+    &__list__item a:hover img{opacity: 0.7;}
+}
+
+.recommend{
+    &__title{color: $cor-secondary;
+    text-align: center;}
+    &__list__item{width: 23%;
+        box-shadow: 2px 3px 3px $cor-Gray-Light;
+        &:hover{opacity: 0.7;}        
+        img{margin-bottom: $basic-Distance*2;}
+    }
+
+    &__name , &__date{font-size: $fz-1;}
+    &__name , &__comment{color: $cor-basic-B;}
+    &__name{margin-bottom: $basic-Distance;}
+    &__comment{font-size:$fz-basic ;
+        margin-bottom: $distance-6;}
+    &__date{color: $cor-Gray;
+    margin-bottom: $distance-1;}
+}
+
+.contact{background-color: $cor-third;
+    padding:$distance-5 0 $distance-7 0;
+    &__content{max-width: 730px;
+    margin: 0 auto;}
+    &__title{text-align: center;
+    margin-bottom: $distance-3-1;}
+    &__item{font-size:$fz-2;
+    margin-bottom:$distance-1-1 ;}
+
+    &__list__item{width: 100%;
+    height: $basic-Distance*6.25;
+    margin-bottom:$distance-1;}
+    &__list__item__opinion{width: 100%;
+    min-height: 136px;}
+    &__list__check{width: 1rem;
+    height: 1rem;}
+    &__list__btn {display: block;
+    margin: 0 auto;
+    padding: 1rem  $basic-Distance*18;
+    font-size:1rem ;
+    color: $cor-basic-W;
+    background-color: $cor-primary;}
+}
+
+footer{background-color: $cor-primary;}
+
+.footer{padding: $distance-3 $distance-3 $distance-4 $distance-3; 
+    a,p{color: $cor-basic-W;}
+    hr{color: #fff;
+        margin-top: 1rem;
+        margin-bottom: 2rem;}
+    &__nav{align-items: center;}
+    &__nav__item a{padding:$distance-3-1;
+        &:hover{transform: scale(1.1);}}
+
+    &__social__item a{padding:$distance-1;
+        &:hover{transform: scale(1.1);}}
+
+    &__contact__item {font-size:$fz-4;
+        img{display: inline-block;
+        vertical-align: middle;
+        margin-right:$distance-1-1;}
+        a{padding:$basic-Distance $distance-1;}
+        & :hover{color:#ffa8a8;}}
+
+    &__terms__item{font-size: $fz-1;
+        a{padding:$basic-Distance $distance-1;}
+        &:hover{transform: scale(1.1);}}
+}

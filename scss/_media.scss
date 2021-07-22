@@ -1,0 +1,40 @@
+@media(max-width:768px){
+
+    .banner{background-image: url(../images/banner/banner-sm.png);
+        height: auto;
+        &__title{font-size: $fz-5;
+        span{font-size:$fz-2;}  }
+    }
+
+    .about{&__list{flex-wrap: wrap;
+        padding: 0 $distance-5-1;}
+        &__list__item{width: 50%;}
+    }
+
+    .classic{
+        .container{padding: 0 $distance-4;}
+        .dFlex-row-reverse{flex-direction: row;}        
+        &__list{margin-bottom:$basic-Distance;
+        justify-content: space-between;}
+        &__list__photo{max-width: 50%;}
+        &__list__photo__02{max-width: 50%;
+            margin:0 $distance-3 0 0;}
+    }
+    .design{h4{font-size: $fz-basic*2;}}
+
+    .recommend{
+        &__list{flex-wrap: wrap;} 
+        &__list__item{width: 43%;
+        margin: $distance-1 0;
+        img{margin:0 auto}} 
+    }  
+
+    .contact{.container{padding: 0 $distance-2 ;}
+            p{font-size: $fz-basic;}}
+
+    .footer{
+    &__nav__item a{padding: 0 $basic-Distance;}
+    &__social__item a{padding: 0 $basic-Distance;}
+    &__contact__item a ,p{font-size: $fz-2;}
+    }
+}
